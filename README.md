@@ -39,8 +39,6 @@
 <img alt= "icon" wide="70" height="70" src ="https://techstack-generator.vercel.app/github-icon.svg">
 &nbsp&nbsp&nbsp&nbsp&nbsp
 <img alt= "icon" wide="65" height="65" src ="https://techstack-generator.vercel.app/restapi-icon.svg">
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img alt= "icon" wide="55" height="55" src ="https://github.com/user-attachments/assets/c04127ff-5846-410d-9ded-e2c850b03710">
 </p>
   
 <p align="center">
