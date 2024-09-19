@@ -7,8 +7,7 @@
 <br>
 <div align='center'> Email : youna@outlook.kr</div>
 <div align='center'> Portfolio : Notion Link</div>
-<div align='center'> Blog : <a href="https://pyounani.tistory.com">https://pyounani.tistory.com</a></div>
-<div align='center'> Blog : <a href="https://velog.io/@pyounani">https://velog.io/@pyounani</a></div>
+<div align='center'> Blog : Blog</div>
 <br>
 
 <p align="center">
