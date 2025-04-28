@@ -1,60 +1,68 @@
-<br>
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?&type=waving&color=timeAuto&height=200&section=header&text=Pyounani's%20Hub&fontSize=50&animation=fadeIn&fontAlignY=45" />
-  </p>
+# Hi there 👋 I'm Youna Park!
 
-<div align='center'> 💻현재 공부 중인 백엔드 신입 개발자입니다.</div>
-<br>
-<div align='center'> Email : youna@outlook.kr</div>
-<div align='center'> Portfolio : Notion Link</div>
-<div align='center'> Blog : Blog</div>
-<br>
+I’m a backend engineer who enjoys building services with a focus on **optimization** and **AI integration**.
 
-<p align="center">
-✍🏻&nbsp&nbsp&nbspTECH SKILLS &nbsp✍🏻
-</p>
+---
 
-<p align="center">
-<img alt= "icon" wide="60" height="60" src ="https://techstack-generator.vercel.app/java-icon.svg">
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img alt= "icon" wide="60" height="60" src ="https://techstack-generator.vercel.app/python-icon.svg">
-</p>
+## 🛠 Tech Stack
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/ydmins/YdMinS/main/icons/spring.png" alt="spring" height="50px"/>
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img src="https://raw.githubusercontent.com/ydmins/YdMinS/main/icons/spring-security.png" alt="spring security" height="50px"/>
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img src="https://raw.githubusercontent.com/ydmins/YdMinS/main/icons/spring-data-jpa.png" alt="spring data jpa" height="50px"/>
-<img alt= "icon" wide="60" height="60" src ="https://techstack-generator.vercel.app/react-icon.svg">
-</p>
+- **Languages**: Java, Python, SQL
+- **Frameworks**: Spring Boot, Spring MVC, JPA
+- **Databases**: MySQL, Redis
+- **DevOps**: AWS EC2, RDS, S3, Docker, GitHub Actions
+- **Testing**: JUnit5
+- **AI Tools**: YOLOv5, GPT-3.5, koBERT
 
-<p align="center">
-<img alt= "icon" wide="60" height="60" src ="https://techstack-generator.vercel.app/mysql-icon.svg">
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img alt= "icon" wide="55" height="55" src ="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png">
-  </p>
+---
 
-<p align="center">
-<img alt= "icon" wide="70" height="70" src ="https://techstack-generator.vercel.app/github-icon.svg">
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img alt= "icon" wide="65" height="65" src ="https://techstack-generator.vercel.app/restapi-icon.svg">
-</p>
-  
-<p align="center">
-<img alt= "icon" wide="65" height="65" src ="https://techstack-generator.vercel.app/docker-icon.svg">
-<img alt= "icon" wide="60" height="60" src ="https://techstack-generator.vercel.app/aws-icon.svg">
-</p>
+## 📫 Contact Me
 
-<br>
-<br>
-<br>
-<div align="center">
-<img wide="100" height="130" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pyounani&layout=compact" /> 
-&nbsp&nbsp&nbsp&nbsp&nbsp
-<img wide="100" height="130" src="https://github-readme-stats.vercel.app/api?username=pyounani&show_icons=true&theme=merko" />
-</div>
+- **Email**: youna@outlook.kr  
+- **GitHub**: [github.com/pyounani](https://github.com/pyounani)  
+- **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer" />
-</p>
+---
+
+## 🚀 Main Projects
+
+### 🌟 StarHub (v1.2.0)
+A location-based team matching web service for study & projects.
+- **Tech Stack**: Java 17, Spring Boot 3.2, MySQL, Redis, AWS (EC2, RDS, S3), Docker
+- **Key Contributions**:
+  - Response time improved from **920ms → 180ms** through indexing
+  - API response time improved from **480ms → 60ms** with Redis caching
+  - Memory usage reduced by **35%**, optimized GC behavior
+  - Handled full API design, deployment, AWS infrastructure
+
+🔗 [GitHub Repository](https://github.com/RP-StarHub/Back-end)
+
+---
+
+### 📖 StoryTeller (v1.2.0)
+An AI-powered interactive English story app for children.
+- **Tech Stack**: Java 17, Spring Boot, MySQL, Redis, AWS, Docker, GitHub Actions
+- **Key Contributions**:
+  - Implemented **JWT-based login** with social login support
+  - Solved S3 data consistency issues with custom file management
+  - Improved TPS from **21 → 61** through **ThreadPool & HikariCP tuning**
+  - Achieved **80% test coverage** with 175+ unit tests
+
+🔗 [GitHub Repository](https://github.com/DS-StoryTeller)
+
+---
+
+### ☁️ Moongge Moongge (v0.0.2)
+A safe SNS app for young students with AI-based content filtering.
+- **Tech Stack**: Java 11, Spring Boot, MySQL, AWS, YOLOv5, GPT-3.5, koBERT
+- **Key Contributions**:
+  - Developed **image masking** and **text filtering** features
+  - Designed and refactored backend API with **DTO-based responses**
+  - Improved performance using **Fetch Join** to avoid N+1 issues
+  - Built **auto-comment generation** with GPT-3.5 + Amazon Rekognition
+
+🔗 [GitHub Repository](https://github.com/pyounani/moongge-back-end)
+
+
+---
+
+Thanks for visiting! 😊
