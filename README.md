@@ -2,7 +2,7 @@
 
 I’m a backend engineer who enjoys building services with a focus on **optimization** and **AI integration**.
 
----
+<br />
 
 ## 🛠 Tech Stack
 
@@ -13,7 +13,7 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 - **Testing**: JUnit5
 - **AI Tools**: YOLOv5, GPT-3.5, koBERT
 
----
+<br />
 
 ## 📫 Contact Me
 
@@ -21,7 +21,7 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 - **GitHub**: [github.com/pyounani](https://github.com/pyounani)  
 - **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
 
----
+<br />
 
 ## 🚀 Main Projects
 
@@ -36,7 +36,7 @@ A location-based team matching web service for study & projects.
 
 🔗 [GitHub Repository](https://github.com/RP-StarHub/Back-end)
 
----
+<br />
 
 ### 📖 StoryTeller (v1.2.0)
 An AI-powered interactive English story app for children.
@@ -49,7 +49,7 @@ An AI-powered interactive English story app for children.
 
 🔗 [GitHub Repository](https://github.com/DS-StoryTeller)
 
----
+<br />
 
 ### ☁️ Moongge Moongge (v0.0.2)
 A safe SNS app for young students with AI-based content filtering.
@@ -63,6 +63,6 @@ A safe SNS app for young students with AI-based content filtering.
 🔗 [GitHub Repository](https://github.com/pyounani/moongge-back-end)
 
 
----
+<br />
 
 Thanks for visiting! 😊
