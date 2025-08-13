@@ -20,6 +20,7 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 - **Email**: youna@outlook.kr  
 - **GitHub**: [github.com/pyounani](https://github.com/pyounani)  
 - **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
+- **Portfolio**: [View Portfolio](https://drive.google.com/file/d/1hKyNosdzkTB2VrCUrJVy-lb2SPzdFbqZ/view?usp=sharing)
 
 <br />
 
