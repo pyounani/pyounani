@@ -9,59 +9,55 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 - **Languages**: Java, Python, SQL
 - **Frameworks**: Spring Boot, Spring MVC, JPA
 - **Databases**: MySQL, Redis
-- **DevOps**: AWS EC2, RDS, S3, Docker, GitHub Actions
-- **Testing**: JUnit5
+- **DevOps**: AWS (EC2, RDS, S3, ECS), Docker/Compose, GitHub Actions, Nginx
+- **Testing**: Prometheus, Grafana, JUnit5, JMeter
 - **AI Tools**: YOLOv5, GPT-3.5, koBERT
 
 <br />
 
 ## 📫 Contact Me
 
-- **Email**: youna@outlook.kr  
-- **GitHub**: [github.com/pyounani](https://github.com/pyounani)  
+- **Email**: yndbsk9372@gmail.com 
 - **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
-- **Portfolio**: [View Portfolio](https://drive.google.com/file/d/1hKyNosdzkTB2VrCUrJVy-lb2SPzdFbqZ/view?usp=sharing)
 
 <br />
 
 ## 🚀 Main Projects
 
-### 🌟 StarHub (v1.2.0)
-A location-based team matching web service for study & projects.
-- **Tech Stack**: Java 17, Spring Boot 3.2, MySQL, Redis, AWS (EC2, RDS, S3), Docker
+### 🎨 AI-based BGM Generation System 
+Backend & Infrastructure | 2025.03 – 2025.10
+- **Tech Stack**: Python 3.11, FastAPI, Celery, Redis, MongoDB, AWS S3, Docker
 - **Key Contributions**:
-  - Response time improved from **920ms → 180ms** through indexing
-  - API response time improved from **480ms → 60ms** with Redis caching
-  - Memory usage reduced by **35%**, optimized GC behavior
-  - Handled full API design, deployment, AWS infrastructure
+  - Built a Celery and Redis-based asynchronous inference pipeline to decouple heavy AI logic from the main server, ensuring high system availability
+  - Optimized VRAM usage from 97% to 60% by implementing dynamic model loading
+  - Established a real-time inference result monitoring environment using SSE (Server-Sent Events)
 
-🔗 [GitHub Repository](https://github.com/RP-StarHub/Back-end)
+🔗 [GitHub Repository](https://github.com/pyounani/4co4co-backend)
 
 <br />
 
-### 📖 StoryTeller (v1.2.0)
-An AI-powered interactive English story app for children.
-- **Tech Stack**: Java 17, Spring Boot, MySQL, Redis, AWS, Docker, GitHub Actions
+### 📖 AI English Story Learning App 
+Backend & Infrastructure Lead | 2024.03 – 2025.02
+- **Tech Stack**: Java 17, Spring Boot 3.2, JPA, MySQL 8.1, AWS (EC2, RDS, S3), Nginx, Docker, JUnit5
 - **Key Contributions**:
-  - Implemented **JWT-based login** with social login support
+  - Resolved JPA 1:1 bidirectional proxy constraints, improving latency from 726ms to 96ms
+  - Improved Peak Latency from 438ms to 258ms by optimizing ThreadPool & HikariCP through correlation analysis
+  - Implemented JWT-based login with social login support
   - Solved S3 data consistency issues with custom file management
-  - Improved TPS from **21 → 61** through **ThreadPool & HikariCP tuning**
-  - Achieved **80% test coverage** with 175+ unit tests
+  - Achieved 80% test coverage with 175+ unit tests
 
 🔗 [GitHub Repository](https://github.com/DS-StoryTeller)
 
 <br />
 
-### ☁️ Moongge Moongge (v0.0.2)
-A safe SNS app for young students with AI-based content filtering.
-- **Tech Stack**: Java 11, Spring Boot, MySQL, AWS, YOLOv5, GPT-3.5, koBERT
+### ✍️ Study Recruitment Platform 
+Operations & Backend | 2025.01 – 2025.03
+- **Tech Stack**: Java 17, Spring Boot, JPA, MySQL, Redis, AWS ECS, GitHub Actions
 - **Key Contributions**:
-  - Developed **image masking** and **text filtering** features
-  - Designed and refactored backend API with **DTO-based responses**
-  - Improved performance using **Fetch Join** to avoid N+1 issues
-  - Built **auto-comment generation** with GPT-3.5 + Amazon Rekognition
+  - Reduced API response time from 150ms to 40ms by resolving Full Table Scans through composite indexing and 2-step lookup strategies
+  - Streamlined infrastructure setup by migrating to an AWS ECS-based managed container environment
 
-🔗 [GitHub Repository](https://github.com/pyounani/moongge-back-end)
+🔗 [GitHub Repository](https://github.com/RP-StarHub/Back-end)
 
 
 <br />
