@@ -28,9 +28,9 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 Backend & Infrastructure | 2025.03 – 2025.10
 - **Tech Stack**: Python 3.11, FastAPI, Celery, Redis, MongoDB, AWS S3, Docker
 - **Key Contributions**:
-  - Built a Celery and Redis-based asynchronous inference pipeline to decouple heavy AI logic from the main server, ensuring high system availability
-  - Optimized VRAM usage from 97% to 60% by implementing dynamic model loading
-  - Established a real-time inference result monitoring environment using SSE (Server-Sent Events)
+  - Built an asynchronous AI inference pipeline using Celery + Redis to prevent API blocking caused by long-running AI inference tasks
+  - Improved timeout and polling overhead issues by introducing a Redis Pub/Sub + SSE-based real-time event communication architecture
+  - Optimized GPU memory usage and inference stability by designing an input-based dynamic model loading strategy for AI models
 
 🔗 [GitHub Repository](https://github.com/pyounani/4co4co-backend)
 
@@ -40,13 +40,14 @@ Backend & Infrastructure | 2025.03 – 2025.10
 Backend & Infrastructure Lead | 2024.03 – 2025.02
 - **Tech Stack**: Java 17, Spring Boot 3.2, JPA, MySQL 8.1, AWS (EC2, RDS, S3), Nginx, Docker, JUnit5
 - **Key Contributions**:
-  - Resolved JPA 1:1 bidirectional proxy constraints, improving latency from 726ms to 96ms
-  - Improved Peak Latency from 438ms to 258ms by optimizing ThreadPool & HikariCP through correlation analysis
-  - Implemented JWT-based login with social login support
-  - Solved S3 data consistency issues with custom file management
-  - Achieved 80% test coverage with 175+ unit tests
+  - Identified HikariCP connection pool bottlenecks during load testing and improved TPS and latency through thread pool, connection pool, and timeout tuning
+  - Discovered excessive queries caused by JPA relationship design through AOP-based observability and resolved them by redesigning the ERD structure
+  - Improved email verification latency by converting synchronous email processing into an asynchronous architecture and optimized thread pool behavior using Mock SMTP-based load testing
+  - Designed a custom RetryPolicy to selectively retry only specific email delivery exceptions instead of relying on generic exception-based retries
+  - Solved DB-S3 consistency issues during transaction rollbacks by designing an event-driven compensation and batch cleanup architecture
+  - Implemented social login and JWT-based authentication using Spring Security and OAuth2
 
-🔗 [GitHub Repository](https://github.com/DS-StoryTeller)
+🔗 [GitHub Repository](https://github.com/pyounani/StoryTeller-BE)
 
 <br />
 
@@ -54,10 +55,10 @@ Backend & Infrastructure Lead | 2024.03 – 2025.02
 Operations & Backend | 2025.01 – 2025.03
 - **Tech Stack**: Java 17, Spring Boot, JPA, MySQL, Redis, AWS ECS, GitHub Actions
 - **Key Contributions**:
-  - Reduced API response time from 150ms to 40ms by resolving Full Table Scans through composite indexing and 2-step lookup strategies
-  - Streamlined infrastructure setup by migrating to an AWS ECS-based managed container environment
+  - Optimized a popular-post ranking API by analyzing execution plans (EXPLAIN) and redesigning the ranking query into a 2-step DB ranking structure
+  - Improved infrastructure management efficiency by migrating to a managed container environment using AWS ECS
 
-🔗 [GitHub Repository](https://github.com/RP-StarHub/Back-end)
+🔗 [GitHub Repository](https://github.com/pyounani/StarHub-BE)
 
 
 <br />
