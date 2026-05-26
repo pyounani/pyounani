@@ -19,6 +19,7 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 
 - **Email**: yndbsk9372@gmail.com 
 - **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
+- **Portfolio**: [Portfolio](https://drive.google.com/file/d/1Xp69KYVo2B9jx81ScZtvVVltGN2sXKhM/view?usp=sharing)
 
 <br />
 
