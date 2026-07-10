@@ -25,31 +25,33 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 
 ## 🚀 Main Projects
 
-### 🎨 AI-based BGM Generation System 
+### 🎨 AI-based BGM Generation System
 Backend & Infrastructure | 2025.03 – 2025.10
-- **Tech Stack**: Python 3.11, FastAPI, Celery, Redis, MongoDB, AWS S3, Docker
+- **Tech Stack**: Python 3.11, FastAPI, Celery, Redis, MongoDB, AWS EKS, S3, Docker, Vault, GitHub Actions
 - **Key Contributions**:
-  - Built an asynchronous AI inference pipeline using Celery + Redis to prevent API blocking caused by long-running AI inference tasks
-  - Improved timeout and polling overhead issues by introducing a Redis Pub/Sub + SSE-based real-time event communication architecture
-  - Optimized GPU memory usage and inference stability by designing an input-based dynamic model loading strategy for AI models
+  - Built an asynchronous inference pipeline with Celery + Redis to eliminate request blocking caused by long-running AI inference, serving 300+ users at a live exhibition
+  - Diagnosed task loss caused by abnormal Worker termination (Celery prefetch re-queuing duplicate tasks) and resolved it with a late-ACK + DB-state-based idempotency guard, guaranteeing exactly-once inference calls
+  - Replaced polling-based status checks with an SSE-based real-time notification architecture, tuning retry/keepalive/timeout values based on measured ~90s inference latency
+  - Stabilized GPU VRAM usage from a peak of 97% to 55–70% on an 8GB GPU by designing a Phase-based sequential model load/evict pipeline for the emotion-analysis → music-generation inference flow
+  - Isolated GPU inference workloads by splitting EKS T2/G4dn node groups and applying Taint/Toleration-based GPU pod scheduling
 
 🔗 [GitHub Repository](https://github.com/pyounani/4co4co-backend)
-
 <br />
 
-### 📖 AI English Story Learning App 
-Backend & Infrastructure Lead | 2024.03 – 2025.02
-- **Tech Stack**: Java 17, Spring Boot 3.2, JPA, MySQL 8.1, AWS (EC2, RDS, S3), Nginx, Docker, JUnit5
+
+### 📖 LLM-based Personalized Fairy Tale Platform
+Backend & Infrastructure Lead | 2024.03 – 2024.10
+- **Tech Stack**: Java 17, Spring Boot 3.2, JPA, Spring Security, MySQL, AWS (EC2, RDS, S3), Nginx, Docker, GitHub Actions, Prometheus, Grafana, JMeter
 - **Key Contributions**:
-  - Identified HikariCP connection pool bottlenecks during load testing and improved TPS and latency through thread pool, connection pool, and timeout tuning
-  - Discovered excessive queries caused by JPA relationship design through AOP-based observability and resolved them by redesigning the ERD structure
-  - Improved email verification latency by converting synchronous email processing into an asynchronous architecture and optimized thread pool behavior using Mock SMTP-based load testing
-  - Designed a custom RetryPolicy to selectively retry only specific email delivery exceptions instead of relying on generic exception-based retries
-  - Solved DB-S3 consistency issues during transaction rollbacks by designing an event-driven compensation and batch cleanup architecture
-  - Implemented social login and JWT-based authentication using Spring Security and OAuth2
+  - Diagnosed an HikariCP connection pool bottleneck under JMeter load testing (RDS max_connections vs. undersized pool causing thread wait); derived optimal thread pool size via Little's Law and re-tuned pool size, reducing peak latency 438ms → 258ms
+  - Identified an N+1 query issue via AOP-based query observability, caused by JPA forcing eager loading on the non-owning side of a bidirectional OneToOne relationship; resolved by redesigning to a unidirectional relationship with foreign key ownership reassigned, improving response time 726ms → 96ms
+  - Converted synchronous email verification into an async architecture and designed a custom RetryPolicy that separates fatal exceptions (invalid address, format errors) from retryable ones (connection failure, rate limit) with exponential backoff; validated thread pool (14) and queue size (30) using a self-built Mock SMTP load test, cutting response time 4733ms → 17ms
+  - Solved DB-S3 orphan file issues on transaction rollback by capturing delete targets via an AFTER_ROLLBACK event listener and batch-processing them through a daily scheduler with chunked deletion (1000/batch)
+  - Built JWT dual-token (Access/Refresh) authentication with Spring Security and OAuth2 social login
+  - Configured Blue-Green deployment via AWS CodeDeploy + ALB, later migrated to a single EC2 + Nginx port-switching setup to reduce infrastructure cost
+  - Wrote 175 unit tests covering core business logic, achieving 80% line coverage
 
 🔗 [GitHub Repository](https://github.com/pyounani/StoryTeller-BE)
-
 <br />
 
 ### ✍️ Study Recruitment Platform 
