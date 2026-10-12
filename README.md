@@ -17,7 +17,7 @@ I’m a backend engineer who enjoys building services with a focus on **optimiza
 
 ## 📫 Contact Me
 
-- **LinkedIn**: [Youna Park](www.linkedin.com/in/유나-박-a34652292)
+- **LinkedIn**: [Youna Park](https://www.linkedin.com/in/유나-박-a34652292)
 - **Email**: yndbsk9372@gmail.com 
 - **Blog**: [pyounani.tistory.com](https://pyounani.tistory.com)
 - **Portfolio**: [URL](https://drive.google.com/file/d/1suV7G6PvqKLtb4uSRVOdlVsMmq29ImRk/view?usp=drive_link)
